@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Configuration;
  *      组件依赖必须使用Full模式默认。其他默认是否Lite模式
  *
  *
- *
+ *哈哈哈
  */
 @Configuration(proxyBeanMethods = false) //告诉SpringBoot这是一个配置类 == 配置文件
 public class MyConfig {
