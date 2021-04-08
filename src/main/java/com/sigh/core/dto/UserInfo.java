@@ -6,7 +6,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 
 /**
- * @author zhiyuan.xu
+ * @author zhiyua n.xu
  * @version 0.0.1
  * @params
  * @date
