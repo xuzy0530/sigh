@@ -12,7 +12,7 @@ public class SparseArray {
 		int [][] a  = new int[11][11];
 			a[1][2] = 1;
 			a[2][3] = 2;
-			a[3][3] = 2;
+			a[3][3] = 1;
 		System.out.println("原数组为：");
 
 		for (int[] x : a) {
@@ -44,7 +44,7 @@ public class SparseArray {
 		array[0][1] = m;
 		array[0][2] = sum;
 
-		int count = 0;
+	/*	int count = 0;
 		for (int i = 0; i < a.length; i++) {
 			for (int j = 0; j < a[i].length; j++) {
 				if (a[i][j] != 0){
@@ -54,14 +54,25 @@ public class SparseArray {
 					array[count][2] = a[i][j];
 				}
 			}
+		}*/
+		int count = 0;
+		for (int i = 0; i < n * m ; i++) {
+			int temp1 = i/n;
+			int temp2 = i%m;
+			if(a[temp1][temp2] != 0){
+				count++;
+				array[count][0] = temp1;
+				array[count][1] = temp2;
+				array[count][2] = a[temp1][temp2];
+			}
 		}
+
 		System.out.println("稀疏数组为：");
 		for (int i = 0; i < array.length; i++) {
 			System.out.println(array[i][0] + "\t" + array[i][1] + "\t" + array[i][2] + "\t");
 		}
 
 		System.out.println("=============================");
-		System.out.println("还原数组:");
 
 		//读取稀疏数组
 		int[][] c = new int[array[0][0]][array[0][1]];
