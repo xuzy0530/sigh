@@ -1,12 +1,14 @@
 package com.sigh.sortingAlgorithm;
 
 
+import com.sigh.core.service.BaseService;
+
 import java.util.Arrays;
 
 /**
  * 冒泡排序
  */
-public class BubbleSort {
+public class BubbleSort extends BaseService {
 
 
 	public static void main(String[] args) {
