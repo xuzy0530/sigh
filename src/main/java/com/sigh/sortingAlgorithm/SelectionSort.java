@@ -4,6 +4,10 @@ import com.sigh.core.service.BaseService;
 
 import java.util.Arrays;
 
+/**
+ * 选择排序
+ */
+
 public class SelectionSort extends BaseService {
 	public static void main(String[] args) {
 		int[] a = {2,4,6,1,23,5,23123,1,123,12};
