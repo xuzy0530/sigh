@@ -1,4 +1,4 @@
-package com.sigh.demo;
+package com.sigh;
 
 import com.sigh.core.config.MyConfig;
 import org.springframework.boot.SpringApplication;
@@ -14,7 +14,6 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootConfiguration
 //@EnableAutoConfiguration
-@ComponentScan("com.sigh")
 public class SighApplication {
     public static void main(String[] args) {
          ConfigurableApplicationContext run = SpringApplication.run(SighApplication.class, args);
